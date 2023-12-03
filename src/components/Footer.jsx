@@ -47,11 +47,11 @@ const Footer = () => {
             </div>
             <footer className="flex items-center justify-center">
                 <div className="flex flex-col lg:w-[80%] md:w-[90%] w-full lg:px-0 md:px-0 sm:px-5 px-8">
-                    <div className='flex justify-between my-24'>
+                    <div className='flex lg:flex-row md:flex-row flex-col justify-between lg:items-start md:items-start items-center my-24 gap-y-10'>
                         <div>
-                            <img className='h-11' src={screenWidth > 768 ? `https://framerusercontent.com/images/tgELERqZ0nObn14bTi418qTbg.png` : "https://framerusercontent.com/images/MwRbsJrk7ItYxeL7mKvPzrq3g.png"} alt="logo" />
+                            <img className='h-11' src="https://framerusercontent.com/images/tgELERqZ0nObn14bTi418qTbg.png" alt="logo" />
                         </div>
-                        <div className="flex flex-col gap-4">
+                        <div className="flex lg:items-start md:items-start items-center flex-col gap-4">
                             <a href="/#features" className="hover:text-gray-600">Features</a>
                             <a href="/#faq" className="hover:text-gray-600">FAQ</a>
                             <a href="/#pricing" className="hover:text-gray-600">Pricing</a>
@@ -61,7 +61,7 @@ const Footer = () => {
 
                     <span className="h-[1px] bg-gray-200 w-full"></span>
 
-                    <div className="flex items-center justify-between py-10">
+                    <div className="flex lg:flex-row md:flex-row flex-col gap-y-5 items-center justify-between py-10">
                         <p className="font-medium">
                             © 2022 ManageWise, Inc.
                         </p>
