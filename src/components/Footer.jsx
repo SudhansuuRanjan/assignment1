@@ -16,7 +16,7 @@ const Footer = () => {
     return (
         <section className="pt-24 bg-gradient-to-b from-transparent to-[#ffefe7]">
             <div className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-                <div className="bg-white lg:px-24 md:px-20 px-10 lg:py-16 md:py-14 py-10 rounded-[2rem] border border-gray-200 flex lg:flex-row md:flex-row flex-col gap-y-12 justify-between items-center">
+                <div className="bg-white lg:px-24 md:px-20 px-10 lg:py-16 md:py-14 py-10 rounded-[2rem] border border-gray-200 flex lg:flex-row md:flex-row flex-col gap-y-12 justify-between items-center shadow-lg">
                     <div className='flex flex-col lg:py-12 md:py-10 py-6 max-w-sm'>
                         <SmallHeading emoji={"👋"} text={"DON'T MISS OUT"} />
                         <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium py-4'>
