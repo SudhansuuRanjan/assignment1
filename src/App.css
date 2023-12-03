@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.marquee,
+.community-img {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.marquee::before,
+.marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 7rem;
+  /* Adjust the width of the shadow as needed */
+  z-index: 100;
+}
+
+.marquee::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255), rgb(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5), transparent);
+}
+
+.marquee::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255), rgb(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5), transparent);
+}
+
+@media screen and (max-width:768px) {
+
+  .marquee::before,
+  .marquee::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3rem;
+    /* Adjust the width of the shadow as needed */
+    z-index: 100;
+  }
+}
+
+.community-img::before,
+.community-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2rem;
+  /* Adjust the width of the shadow as needed */
+  z-index: 100;
+}
+
+.community-img::before {
+  left: 0;
+  background: linear-gradient(to right, rgb(255, 255, 255), transparent);
+}
+
+.community-img::after {
+  right: 0;
+  background: linear-gradient(to left, rgb(255, 255, 255), transparent);
+}
